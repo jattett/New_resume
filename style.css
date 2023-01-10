@@ -180,20 +180,37 @@
     line-height: 2;
     color: #0CABA8;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .projet-int a{
     line-height: 2;
     text-decoration: none;
+    color: black;
+    font-weight: 500;
+    background-color: #0CABA8;
+    padding: 10px;
+    border-radius: 15px;
 }
+
+.projet-int a:hover{
+    color: white;
+}
+
+.projet-int a:active{
+    box-shadow: 0 0 30px gray inset;
+}
+
+
 .projet-int ul{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .projet-int li{
     list-style:square;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .work-data{
