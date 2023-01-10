@@ -10,7 +10,8 @@
     justify-content: center;
     align-items: center;
     place-items: center;
-    margin: 50px 100px 50px 100px;    
+    margin: 50px 100px 50px 100px; 
+    line-height: 1.5;   
 }
 
 .header-box img{
@@ -20,9 +21,7 @@
     
 }
 
-.about-box p {
-    font-weight: 300;
-}
+
 
 .tit-box {
     margin-top: 50px;
@@ -38,15 +37,14 @@
 .tit-box .tit-text strong{
     font-size: 45px;
     font-weight: 700;
-    margin-left: 8rem;
-    line-height: 2;
-    color: #0CABA8
+    line-height: 1.5;
+    color: #0CABA8;
+    
 }
 
 
 .tit-sub-box {
     margin-top: 20px;
-    margin-left: 80px;
     width: 550px;
 
 }
@@ -103,7 +101,7 @@
 }
 
 .stack-box p {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .stack-box p::before{
@@ -141,11 +139,20 @@
     font-weight: 300;
 }
 
-.project-tit-box .project-box{
-    font-weight: 600;
-    background-color: rebeccapurple;
+
+.project-int-box .projet-tit{
+    font-weight: 500;
 }
 
+.project-tit-box .project-box{
+    font-weight: 600;
+}
+
+
+.projet-tit-box .project-date{
+    font-weight: 500;
+    color: #0CABA8;
+}
 
 .projet-tit::before{
     content: "";
@@ -164,9 +171,15 @@
 }
 
 
+.projet-int .about-detail{
+    font-weight: 500;
+}
+
 .projet-int .about-lang{
     font-size: 18px;
     line-height: 2;
+    color: #0CABA8;
+    font-weight: 500;
 }
 
 .projet-int a{
@@ -190,10 +203,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.work-data .work-tit {
-    
-}
-
 .work-box .work-tit::before{
     content: "";
     border-left: 6px solid #0CABA8;
@@ -202,7 +211,8 @@
 
 .work-box .work-date {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
+    color:#0CABA8;
 }
 
 .work-int{
@@ -215,7 +225,73 @@
 }
 
 
+@media screen and (min-width: 320px) and (max-width:480px) {
+    body {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .header-box {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;        
+    }
 
+    .header-box .tit-text {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .header-box .tit-text strong{
+        font-size: 30px;
+    }
+
+
+    .tit-sub-box{
+        text-align: center;
+    }
+
+    .tit-sub-box .tit-sub-list{
+        font-size: px;
+        text-align: center;
+    }
+
+    .about-box p {
+    font-size: 15px;
+    }
+
+    .about-box ul {
+        font-size: 11px;
+    }
+
+    .stack-box .frt-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .stack-box .frt-box p {
+        margin-bottom: 15px;
+    }
+
+    .project-int-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-int-box img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .work-data {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
 
 
 
