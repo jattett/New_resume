@@ -290,6 +290,13 @@
         flex-direction: column;
     }
 
+    .intro-box p {
+        font-size: 20px;
+    }
+    
+    .intro-box li{
+        font-size: 15px;
+    }
 
 }
 
